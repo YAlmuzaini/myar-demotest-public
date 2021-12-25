@@ -58,7 +58,7 @@ function initiateModels() {
       {
         name: 'Wizard',
         dialogue: 'I\'m The Wizard, Pleased meeting you...have you seen my Staff?',
-        tool: new Tool('Staff', 'You have found Wizard\'s Staff!'),
+        tool: new Tool('Wizard_Staff', 'You have found Wizard\'s Staff!'),
         successDialogue: 'Thanks for finding my Staff!'
       },
       {
