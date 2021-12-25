@@ -19,9 +19,9 @@
 
 <body style="margin: 0px; overflow: hidden">
   <div class="speech-bubble"></div>
-  <a-scene embedded arjs cursor="rayOrigin: mouse" accepts-clicks>
-    <img src="builder-markers/weapon/Wizard_Staff.obj" alt="" />
-
+  <a-scene embedded cursor="rayOrigin: mouse" accepts-clicks vr-mode-ui="enabled: false;"
+    loading-screen="enabled: false;" renderer="logarithmicDepthBuffer: true;"
+    arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" gesture-detector>
     <a-assets>
       <!-- the characters -->
       <a-asset-item id="Cleric-obj" src="builder-markers/characters/Cleric.obj"></a-asset-item>
@@ -48,12 +48,12 @@
         scale="0.15 0.15 0.15"></a-entity>
     </a-marker>
     <a-marker id="Rogue-marker" type="pattern" url="builder-markers/Rogue.patt">
-      <a-entity id="Rogue" obj-model="obj: #Rogue-obj;" material="color: green" rotation="0 180 0"
-        position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
+      <a-entity id="Rogue" obj-model="obj: #Rogue-obj;" material="color: green" rotation="0 180 0" position="0 0 0.5"
+        scale="0.15 0.15 0.15"></a-entity>
     </a-marker>
     <a-marker id="Warrior-marker" type="pattern" url="builder-markers/Warrior.patt">
-      <a-entity id="Warrior" obj-model="obj: #Warrior-obj;" material="color: green" rotation="0 180 0" position="0 0 0.5"
-        scale="0.15 0.15 0.15"></a-entity>
+      <a-entity id="Warrior" obj-model="obj: #Warrior-obj;" material="color: green" rotation="0 180 0"
+        position="0 0 0.5" scale="0.15 0.15 0.15"></a-entity>
     </a-marker>
     <a-marker id="Wizard-marker" type="pattern" url="builder-markers/Wizard.patt">
       <a-entity id="Wizard" obj-model="obj: #Wizard-obj;" material="color: green" rotation="0 180 0" position="0 0 0.5"
@@ -62,24 +62,24 @@
 
     <!-- the weapons -->
     <a-marker id="Staff-marker" type="pattern" url="builder-markers/Cleric_Staff.patt">
-      <a-entity id="Staff" obj-model="obj: #Cleric_Staff-obj;" material="color: green" rotation="90 -45 0" position="0 0 0"
-        scale="1 1 1"></a-entity>
+      <a-entity id="Staff" obj-model="obj: #Cleric_Staff-obj;" material="color: green" rotation="90 -45 0"
+        position="0 0 0" scale="1 1 1"></a-entity>
     </a-marker>
     <a-marker id="Arrow-marker" type="pattern" url="builder-markers/Ranger_Arrow.patt">
       <a-entity id="Arrow" obj-model="obj: #Ranger_Arrow-obj;" material="color: green" rotation="0 45 0"
         position="0 0 0" scale="1 1 1"></a-entity>
     </a-marker>
     <a-marker id="Dagger-marker" type="pattern" url="builder-markers/Rogue_Dagger.patt">
-      <a-entity id="Dagger" obj-model="obj: #Rogue_Dagger-obj;" material="color: green" rotation="90 -45 45" position="0 0 0"
-        scale="1 1 1"></a-entity>
+      <a-entity id="Dagger" obj-model="obj: #Rogue_Dagger-obj;" material="color: green" rotation="90 -45 45"
+        position="0 0 0" scale="1 1 1"></a-entity>
     </a-marker>
     <a-marker id="Sword-marker" type="pattern" url="builder-markers/Warrior_Sword.patt">
-      <a-entity id="Sword" obj-model="obj: #Warrior_Sword-obj;" material="color: green" rotation="180 0 0" position="0 0 0"
-        scale="1 1 1"></a-entity>
+      <a-entity id="Sword" obj-model="obj: #Warrior_Sword-obj;" material="color: green" rotation="180 0 0"
+        position="0 0 0" scale="1 1 1"></a-entity>
     </a-marker>
     <a-marker id="Wizard_Staff-marker" type="pattern" url="builder-markers/Wizard_Staff.patt">
-      <a-entity id="Wizard_Staff" obj-model="obj: #Wizard_Staff-obj;" material="color: green" rotation="90 -45 0" position="0 0 0"
-        scale="1 1 1"></a-entity>
+      <a-entity id="Wizard_Staff" obj-model="obj: #Wizard_Staff-obj;" material="color: green" rotation="90 -45 0"
+        position="0 0 0" scale="1 1 1"></a-entity>
     </a-marker>
 
     <a-marker id="demo-marker" type="pattern" url="builder-markers/demo.patt">
