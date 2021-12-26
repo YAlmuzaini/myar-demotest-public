@@ -51,13 +51,13 @@ function initiateModels() {
       },
       {
         name: 'Warrior',
-        dialogue: 'Hello, I\'m The Warrior! I have to finish my fight, but I can\'t find my Sword...',
+        dialogue: 'Hello, I\'m The Warrior! I have to finish my fight, but I can\'t find my Sword... It was with me at CL227 🤔',
         tool: new Tool('Sword', 'You have found Warrior\'s Sword!'),
         successDialogue: 'Thanks for the Sword!'
       },
       {
         name: 'Wizard',
-        dialogue: 'I\'m The Wizard, Pleased meeting you...have you seen my Staff?',
+        dialogue: 'I\'m The Wizard, nice meeting you...have you seen my Staff? 🤦‍♂️ i keep losing it the last lab',
         tool: new Tool('Wizard_Staff', 'You have found Wizard\'s Staff!'),
         successDialogue: 'Thanks for finding my Staff!'
       },
