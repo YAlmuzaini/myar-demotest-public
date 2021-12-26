@@ -36,6 +36,9 @@
       <a-asset-item id="Rogue_Dagger-obj" src="builder-markers/weapon/Rogue_Dagger.obj"></a-asset-item>
       <a-asset-item id="Warrior_Sword-obj" src="builder-markers/weapon/Warrior_Sword.obj"></a-asset-item>
       <a-asset-item id="Wizard_Staff-obj" src="builder-markers/weapon/Wizard_Staff.obj"></a-asset-item>
+
+      <!-- demo -->
+      <a-asset-item id="demo-obj" src="builder-markers/characters/Only_Spider_with_Animations_Export.obj"></a-asset-item>
     </a-assets>
 
     <!-- the characters -->
@@ -83,7 +86,8 @@
     </a-marker>
 
     <a-marker id="demo-marker" type="pattern" url="builder-markers/demo.patt">
-      <a-box id="demo" position="0 0.5 0" scale="0.5 0.5 0.5" material="color: green;"></a-box>
+      <a-entity id="demo" obj-model="obj: #demo-obj;" rotation="90 -45 0"
+      position="0 0.5 0" scale="1 1 1"></a-entity>
     </a-marker>
 
     <a-entity camera></a-entity>
