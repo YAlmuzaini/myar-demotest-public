@@ -63,7 +63,7 @@ function initiateModels() {
       },
       {
         name: 'demo',
-        dialogue: 'Meow! Welcome to CBRE Build.',
+        dialogue: 'demo Alien Animal.',
       }
     ];
 
