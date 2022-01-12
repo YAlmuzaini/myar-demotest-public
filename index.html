@@ -23,10 +23,7 @@
     loading-screen="enabled: false;" renderer="logarithmicDepthBuffer: true;"
     arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;" id="scene" gesture-detector>
 
-    <a-entity text="value: Hello World;"></a-entity>
-
-    <a-assets>
-      <!-- the characters -->
+    <a-entity bmfont-tehe characters -->
       <a-asset-item id="Cleric-obj" src="builder-markers/characters/Cleric.obj"></a-asset-item>
       <a-asset-item id="Ranger-obj" src="builder-markers/characters/Ranger.obj"></a-asset-item>
       <a-asset-item id="Rogue-obj" src="builder-markers/characters/Rogue.obj"></a-asset-item>
@@ -39,13 +36,10 @@
       <a-asset-item id="Rogue_Dagger-obj" src="builder-markers/weapon/Rogue_Dagger.obj"></a-asset-item>
       <a-asset-item id="Warrior_Sword-obj" src="builder-markers/weapon/Warrior_Sword.obj"></a-asset-item>
       <a-asset-item id="Wizard_Staff-obj" src="builder-markers/weapon/Wizard_Staff.obj"></a-asset-item>
-
-      <!-- demo -->
-      <a-asset-item id="demo-obj" src="builder-markers/characters/Alien_Animal.obj"></a-asset-item>
-    </a-assets>
+       </a-assets>
 
     <!-- the characters -->
-    <a-marker id="Cleric-marker" type="pattern" url="builder-markers/pattern-ktechmarker.patt">
+    <a-marker id="Cleric-marker" type="pattern" url="builder-markers/Cleric.patt">
       <a-entity id="Cleric" obj-model="obj: #Cleric-obj;" material="color: #445db7" rotation="270 0 0" position="0 0 0.5"
         scale="0.5 0.5 0.5"></a-entity>
     </a-marker>
@@ -89,9 +83,8 @@
     </a-marker>
 
     <a-marker id="demo-marker" type="pattern" url="builder-markers/demo.patt">
-      <a-entity id="demo" obj-model="obj: #demo-obj;" material="color: #212e7e" rotation="90 -45 0"
-      position="0 0.5 0" scale="0.05 0.05 0.05"></a-entity>
-    </a-marker>
+      <a-box id="demo" position="0 0.5 0" scale="0.5 0.5 0.5" material="color: green;"></a-box>
+ </a-marker>
 
     <a-entity camera></a-entity>
   </a-scene>
